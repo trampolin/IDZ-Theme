@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "steen";
+	src: url(font/ubuntu-b.ttf) format("truetype");
+}
+
+#headerimg {
+	height: 451px;
+	/*background-color: red;*/
+	background-image: url(images/background.jpg);
+}
+
+#content {
+	background-color: black;
+}
+/* 235 */
+
+#post-57 img {
+	border: 2px solid #579;
+}
+
+#post-57 img:hover {
+	border: 2px solid #abc;
+}
+
+#gigs {
+	/*background: #222;*/
+	width: 940px;
+	height: 90px;
+}
+
+#gigs a {
+	font-family: "steen";
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 0px;
+	color: #3BFFFC;
+}
+
+#gigs a:hover {
+	color: #85B8FF;
+}
+
+#gigs ul {
+	margin: 0px;
+}
+
+#gigs li {
+	font-size: 28px;
+	width: 940px;
+	margin: 10px 0px 0px 0px;
+	text-align: center;
+}
+
+/*
+#news-ticker {
+	background: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+#tickerLink {
+	background: red;
+	display: block;
+}
+*/
+
+/* Quicklinks */
+
+#facebook,
+#twitter,
+#rssfeed,
+#epk,
+#youtube {
+	width: 64px;
+	height: 64px;
+}
+#facebook {
+	background-image: url("images/fb64.png");
+}
+#youtube {
+	background-image: url("images/yt64.png");
+}
+#twitter {
+	background-image: url("images/tw64.png");
+}
+#rssfeed {
+	background-image: url("images/rss64.png");
+}
+#epk {
+	background-image: url("images/epk64.png");
+}
