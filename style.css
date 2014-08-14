@@ -1,7 +1,7 @@
 /*
-Theme Name: Schritt f&uuml;r Scritt
+Theme Name: Impuls der Zeit
 Theme URI: http://www.steenband.de
-Description: Style for the new CD
+Description: Style for Impuls der Zeit
 Author: Ritsch
 Author URI: http://wordpress.org/
 Version: 1.0
@@ -170,7 +170,7 @@ div.menu,
 	width: 940px;
 }
 #wrapper {
-	background: black;
+	background: #eee;
 	margin-top: 20px;
 	padding: 0 20px;
 }
@@ -204,7 +204,7 @@ div.menu,
 
 /* Main global 'theme' and typographic styles */
 body {
-	background: black;
+	background: #ddd;
 }
 body,
 input,
@@ -579,7 +579,7 @@ div.menu li {
 	color: #ff4b33;
 }
 #content .entry-title {
-	color: #FFF;
+	color: black;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 1.3em;
@@ -587,7 +587,7 @@ div.menu li {
 }
 .entry-title a:link,
 .entry-title a:visited {
-	color: #FFF;
+	color: black;
 	text-decoration: none;
 	text-transform: uppercase;
 }
