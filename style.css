@@ -170,7 +170,7 @@ div.menu,
 	width: 940px;
 }
 #wrapper {
-	background: #eee;
+	background: white;
 	margin-top: 20px;
 	padding: 0 20px;
 }
@@ -380,7 +380,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #000;
+	background: #f8f8f8;
 	display: block;
 	float: left;
 	margin: 0 auto;
@@ -408,7 +408,7 @@ div.menu li {
 	width: 232px;
 }
 #access a {
-	color: white;
+	color: black;
 	display: block;
 	line-height: 38px;
 	padding: 0 10px;
@@ -444,8 +444,8 @@ div.menu li {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #111;
-	color: #fff;
+	background: #ddd;
+	color: black;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -455,7 +455,7 @@ div.menu li {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-	color: #fff;
+	color: black;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current_page_ancestor a,
@@ -463,7 +463,7 @@ div.menu li {
 * html #access ul li.current-menu-item a,
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
-	color: #fff;
+	color: black;
 }
 
 
@@ -546,6 +546,7 @@ div.menu li {
 }
 .hentry {
 	margin: 0 0 48px 0;
+	padding-top: 10px;
 }
 .home .sticky {
 	background: #f2f7fc;
@@ -617,7 +618,7 @@ div.menu li {
 
 .post, #content .page{
 	border-left: 1px solid #444;
-	border-right: 1px solid #444;
+	/*border-right: 1px solid #444;*/
 	padding-left: 20px;
 	padding-right: 20px;
 }
