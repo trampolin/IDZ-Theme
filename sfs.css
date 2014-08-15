@@ -4,9 +4,24 @@
 }
 
 #headerimg {
-	height: 451px;
+	height: 271px;
 	/*background-color: red;*/
-	background-image: url(images/background.jpg);
+	background-image: url(images/schleife.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.headerinfo {
+	width: 200px;
+	height: 272px;
+}
+
+#headerinfo-r {
+	float: right;
+}
+
+#headerinfo-l{
+	float: left;
 }
 
 #content {

@@ -380,21 +380,21 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #f8f8f8;
+	/*background: #f8f8f8;*/
 	display: block;
 	float: left;
 	margin: 0 auto;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	width: 940px;
-	border-bottom: 1px solid #555;
-	border-top: 1px solid #555;
+	width: 200px;
+	/*border-bottom: 1px solid #555;
+	border-top: 1px solid #555;*/
 }
 #access .menu-header,
 div.menu {
 	font-size: 33px;
-	margin-left: 12px;
-	width: 928px;
+	margin: auto;
+	width: 190px;
 }
 #access .menu-header ul,
 div.menu ul {
@@ -405,7 +405,10 @@ div.menu ul {
 div.menu li {
 	float: left;
 	position: relative;
-	width: 232px;
+	width: 188px;
+	margin-bottom: 5px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 #access a {
 	color: black;
@@ -444,7 +447,7 @@ div.menu li {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #ddd;
+	background: #eee;
 	color: black;
 }
 #access ul li:hover > ul {
