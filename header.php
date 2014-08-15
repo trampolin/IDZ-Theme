@@ -88,22 +88,53 @@
 						}
 					?>
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<div id="headerimg">
-							<div class="headerinfo" id="headerinfo-r">
-							
-							
-							
+							<div id="headerimg">
+								<div class="headerinfo"  id="headerinfo-l">
+								
+									<div id="access" role="navigation">
+										<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
+										<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
+										<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+									</div><!-- #access -->
+								
+								</div>
+								<div class="headerinfo" id="headerinfo-r">
+								
+									<h1>NEXT SHOWS</h1>
+									<ul>
+									
+									<?php query_posts(array ( 
+											'category_name' => 'gigs', 
+											'posts_per_page' => 4, 
+											'order' => 'ASC',
+											'meta_key' => 'gigdate'/*,
+											'meta_compare' => '>=',
+											'meta_value' => date('Y-m-d')*/
+										)); ?>
+									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+										<li><a href="<?php echo get_permalink(); ?>">
+										 <?php 
+											the_title(); 
+											$gigdate = get_post_meta( get_the_ID(), 'gigdate' );
+											echo " ".$gigdate[0];
+											
+											/*foreach ($gigdate as $key => $value)
+											{
+												echo $key." -> ".$value;
+											}*/
+										 ?>
+										 </a>
+										</li>
+									<?php endwhile; else: ?>
+										<li>Keine Shows</li>
+									<?php endif; ?>
+									<?php wp_reset_query(); ?>
+										
+									</ul>
+								
+								</div>
 							</div>
-							<div class="headerinfo"  id="headerinfo-l">
-							
-								<div id="access" role="navigation">
-									<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
-									<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-									<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-								</div><!-- #access -->
-							
-							</div>
-						</div></a>
+						</a>
 					<?php endif; ?>
 			</div><!-- #branding -->
 			

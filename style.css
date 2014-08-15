@@ -406,12 +406,12 @@ div.menu li {
 	float: left;
 	position: relative;
 	width: 188px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 }
 #access a {
-	color: black;
+	color: #888;
 	display: block;
 	line-height: 38px;
 	padding: 0 10px;
@@ -439,7 +439,7 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #080808;
+	background: #f8f8f8;
 	line-height: 1em;
 	padding: 10px;
 	width: 212px;
@@ -459,7 +459,17 @@ div.menu li {
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
 	color: black;
+	background: #ffeedd;
 }
+#access ul li.current_page_item > a:hover,
+#access ul li.current_page_ancestor > a:hover,
+#access ul li.current-menu-ancestor > a:hover,
+#access ul li.current-menu-item > a:hover,
+#access ul li.current-menu-parent > a:hover {
+	color: black;
+	background: #ffddbb;
+}
+
 * html #access ul li.current_page_item a,
 * html #access ul li.current_page_ancestor a,
 * html #access ul li.current-menu-ancestor a,
@@ -467,6 +477,7 @@ div.menu li {
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
 	color: black;
+	/*background: #ffffed;*/
 }
 
 
