@@ -68,6 +68,58 @@
 	padding-bottom: 10px;
 }
 
+#topcontentcontainer {
+	width: 800px;
+	height: 260px;
+}
+
+.topcontentbox {
+	width: 378px;
+	height: 213px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 10px;
+	font-family: "steen";
+	text-align: center;
+}
+
+.topcontentbox a {
+	color: #888;
+	display: block;
+	line-height: 28px;
+	padding: 0 10px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.topcontentbox ul {
+	list-style: none;
+	margin: 0;
+}
+
+.topcontentbox li:hover > a,
+.topcontentbox ul :hover > a {
+	background: #eee;
+	color: black;
+}
+
+.topcontentbox ul li  {
+
+}
+
+.topcontentbox ul li > a {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.topcontentbox h1 {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
 #content {
 	background-color: white;
 }

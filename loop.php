@@ -18,7 +18,48 @@
  * @since Twenty Ten 1.0
  */
 ?>
-
+<div id="topcontentcontainer">
+	<div class="topcontentbox">
+		<iframe width="378" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+	<div class="topcontentbox">
+	
+	
+									<h1>NEXT SHOWS</h1>
+									<ul>
+									
+									<?php query_posts(array ( 
+											'category_name' => 'gigs', 
+											'posts_per_page' => 4, 
+											'order' => 'ASC',
+											'meta_key' => 'gigdate'/*,
+											'meta_compare' => '>=',
+											'meta_value' => date('Y-m-d')*/
+										)); ?>
+									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+										<li><a href="<?php echo get_permalink(); ?>">
+										 <?php 
+											the_title(); 
+											$gigdate = get_post_meta( get_the_ID(), 'gigdate' );
+											echo " ".$gigdate[0];
+											
+											/*foreach ($gigdate as $key => $value)
+											{
+												echo $key." -> ".$value;
+											}*/
+										 ?>
+										 </a>
+										</li>
+									<?php endwhile; else: ?>
+										<li>Keine Shows</li>
+									<?php endif; ?>
+									<?php wp_reset_query(); ?>
+										
+									</ul>
+	
+	</div>
+</div>
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
 	<div id="nav-above" class="navigation">
