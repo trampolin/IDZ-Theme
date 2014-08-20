@@ -386,7 +386,8 @@ a:hover {
 	margin: 0 auto;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	width: 200px;
+	width: 940px;
+	border-bottom: 1px solid #ccc;
 	/*border-bottom: 1px solid #555;
 	border-top: 1px solid #555;*/
 }
@@ -394,7 +395,7 @@ a:hover {
 div.menu {
 	font-size: 33px;
 	margin: auto;
-	width: 190px;
+	width: 920px;
 }
 #access .menu-header ul,
 div.menu ul {
@@ -405,10 +406,10 @@ div.menu ul {
 div.menu li {
 	float: left;
 	position: relative;
-	width: 188px;
-	margin-bottom: 15px;
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	width: 200px;
+	margin-left: 15px;
+	margin-right: 15px;
+	/*border-bottom: 1px solid #ccc;*/
 }
 #access a {
 	color: #888;

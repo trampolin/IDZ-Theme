@@ -89,15 +89,11 @@
 					?>
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 							<div id="headerimg">
-								<div class="headerinfo"  id="headerinfo-l">
+								<!--div class="headerinfo"  id="headerinfo-l">
 								
-									<div id="access" role="navigation">
-										<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
-										<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-										<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-									</div><!-- #access -->
+
 								
-								</div>
+								</div-->
 								<div class="headerinfo" id="headerinfo-r">
 								
 									<h1>NEXT SHOWS</h1>
@@ -138,6 +134,12 @@
 					<?php endif; ?>
 			</div><!-- #branding -->
 			
+			
+									<div id="access" role="navigation">
+										<?php /* Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
+										<?php /* Our navigation menu. If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
+										<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+									</div><!-- #access -->
 			<!--div id="gigs">
 				<span><?php /*if ( function_exists('insert_newsticker') ) { insert_newsticker(); }*/ ?></span>
 			</div-->
