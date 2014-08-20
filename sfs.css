@@ -74,9 +74,9 @@
 }
 
 .topcontentbox {
-	width: 378px;
+	width: 380px;
 	height: 213px;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	float: left;
 	margin: 10px;
 	font-family: "steen";
@@ -110,8 +110,8 @@
 }
 
 .topcontentbox ul li > a {
-	border-left: 1px solid #ccc;
-	border-right: 1px solid #ccc;
+	/*border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;*/
 }
 
 .topcontentbox h1 {
@@ -201,4 +201,15 @@
 }
 #epk {
 	background-image: url("images/epk64.png");
+}
+
+
+
+.my-product {
+	text-align: center;
+	width: 301;
+}
+
+.my-product img {
+	border: 1px solid #ccc;
 }

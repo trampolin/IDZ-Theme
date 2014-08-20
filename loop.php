@@ -20,43 +20,45 @@
 ?>
 <div id="topcontentcontainer">
 	<div class="topcontentbox">
-		<iframe width="378" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
+		<iframe width="380" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
 	<div class="topcontentbox">
-	
-	
-									<h1>NEXT SHOWS</h1>
-									<ul>
-									
-									<?php query_posts(array ( 
-											'category_name' => 'gigs', 
-											'posts_per_page' => 4, 
-											'order' => 'ASC',
-											'meta_key' => 'gigdate'/*,
-											'meta_compare' => '>=',
-											'meta_value' => date('Y-m-d')*/
-										)); ?>
-									<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-										<li><a href="<?php echo get_permalink(); ?>">
-										 <?php 
-											the_title(); 
-											$gigdate = get_post_meta( get_the_ID(), 'gigdate' );
-											echo " ".$gigdate[0];
-											
-											/*foreach ($gigdate as $key => $value)
-											{
-												echo $key." -> ".$value;
-											}*/
-										 ?>
-										 </a>
-										</li>
-									<?php endwhile; else: ?>
-										<li>Keine Shows</li>
-									<?php endif; ?>
-									<?php wp_reset_query(); ?>
-										
-									</ul>
+	<h1>NEXT SHOWS</h1>
+		<ul>
+		
+		<?php query_posts(array ( 
+				'post_type' => 'gig',
+				/*'category_name' => 'gigs', */
+				'posts_per_page' => 4, 
+				'order' => 'ASC',
+				/*'meta_key' => 'gigdate',
+				'meta_compare' => '>=',
+				'meta_value' => date('Y-m-d')*/
+			)); ?>
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<li><a href="<?php echo get_permalink(); ?>">
+			 <?php 
+				$date = DateTime::createFromFormat('Y-m-d', get_field('gigdate'));
+				echo $date->format('d.m.Y')." - ".get_field('gigcity');
+				$venue = get_field('gigvenue');
+				if ($venue != '') {
+					echo " - ".$venue;
+				}
+				
+				/*foreach ($gigdate as $key => $value)
+				{
+					echo $key." -> ".$value;
+				}*/
+			 ?>
+			 </a>
+			</li>
+		<?php endwhile; else: ?>
+			<li>Keine Shows</li>
+		<?php endif; ?>
+		<?php wp_reset_query(); ?>
+			
+		</ul>
 	
 	</div>
 </div>
@@ -69,7 +71,7 @@
 <?php endif; ?>
 
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
-<?php if ( ! have_posts() ) : ?>
+<?php if ( ! have_posts() && (1 == 0) ) : ?>
 	<div id="post-0" class="post error404 not-found">
 		<h1 class="entry-title"><?php _e( 'Not Found', 'twentyten' ); ?></h1>
 		<div class="entry-content">
