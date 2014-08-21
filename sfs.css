@@ -93,6 +93,14 @@
 	text-transform: uppercase;
 }
 
+#next-shows {
+	width: 378px;
+	height: 211px;
+	border: 1px solid #444;
+	-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+}
 
 .topcontentbox ul {
 	list-style: none;
@@ -203,7 +211,11 @@
 	background-image: url("images/epk64.png");
 }
 
-
+.shiny {
+	-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+}
 
 .my-product {
 	text-align: center;

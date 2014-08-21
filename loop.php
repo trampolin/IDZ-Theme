@@ -23,7 +23,7 @@
 		<iframe width="380" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
-	<div class="topcontentbox">
+	<div class="topcontentbox" id="next-shows">
 	<h1>NEXT SHOWS</h1>
 		<ul>
 		
@@ -164,6 +164,32 @@
 			</div><!-- .entry-summary -->
 	<?php else : ?>
 			<div class="entry-content">
+				<?php /* Beitragsbild wenn vorhanden */ ?>
+				
+				<?php 
+
+				$image = get_field('postimage');
+				$size = 'postimage'; // (thumbnail, medium, large, full or custom size)
+
+				if( $image ) {
+
+					foreach ($image['sizes'] as $key => $value)
+					{
+						//echo $key.':'.$value.'<br />';
+					}
+					?>
+<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentyten' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
+					<?php
+					echo wp_get_attachment_image( $image['id'], $size );
+					?></a><?php
+				}
+				else
+				{
+					//echo "<p>No Image</p>";
+				}
+
+				?>
+
 				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 			</div><!-- .entry-content -->

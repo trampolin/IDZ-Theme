@@ -80,6 +80,7 @@ function twentyten_setup() {
 
 	// This theme uses post thumbnails
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'postimage', 210, 210, false);
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
