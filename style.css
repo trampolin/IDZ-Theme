@@ -381,16 +381,25 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	/*background: #f8f8f8;*/
+	/*background-color: rgba(255, 255, 255, 0.75);*/
 	display: block;
 	float: left;
 	margin: 0 auto;
-	padding-bottom: 10px;
+	padding-bottom: 40px;
 	padding-top: 10px;
 	width: 940px;
-	border-bottom: 1px solid #ccc;
+	/*border-bottom: 1px solid #ccc;*/
 	/*border-bottom: 1px solid #555;
 	border-top: 1px solid #555;*/
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 89%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.75)), color-stop(89%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
 }
 #access .menu-header,
 div.menu {
