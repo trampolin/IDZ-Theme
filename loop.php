@@ -19,11 +19,11 @@
  */
 ?>
 <div id="topcontentcontainer">
-	<div class="topcontentbox">
+	<div class="topcontentbox shiny">
 		<iframe width="380" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
-	<div class="topcontentbox" id="next-shows">
+	<div class="topcontentbox shiny" id="next-shows">
 	<h1>NEXT SHOWS</h1>
 		<ul>
 		
@@ -32,9 +32,9 @@
 				/*'category_name' => 'gigs', */
 				'posts_per_page' => 4, 
 				'order' => 'ASC',
-				/*'meta_key' => 'gigdate',
+				'meta_key' => 'gigdate',
 				'meta_compare' => '>=',
-				'meta_value' => date('Y-m-d')*/
+				'meta_value' => date('Y-m-d')
 			)); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<li><a href="<?php echo get_permalink(); ?>">
@@ -96,6 +96,16 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
+	 <?php
+	 
+			/*query_posts(array ( 
+				'post_type' => array('gig','post')
+			));*/
+	 
+	 
+	 ?>
+	 
+	 
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts of the Gallery format. The gallery category is the old way. */ ?>
@@ -209,3 +219,10 @@
 					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 				</div><!-- #nav-below -->
 <?php endif; ?>
+
+<div id="prefootercontainer">
+	<div class="prefootercontent shiny" id="leftprefoot">
+	</div>
+	<div class="prefootercontent shiny" id="rightprefoot">
+	</div>
+</div>

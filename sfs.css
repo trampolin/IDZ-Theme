@@ -4,8 +4,8 @@
 }
 
 #headerimg {
-	height: 271px;
-	/*background-color: red;*/
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.75);
 	background-image: url(images/schleife.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -97,9 +97,7 @@
 	width: 378px;
 	height: 211px;
 	border: 1px solid #444;
-	-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
-	-moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
-	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	background: white;
 }
 
 .topcontentbox ul {
@@ -129,7 +127,7 @@
 }
 
 #content {
-	background-color: white;
+	/*background-color: white;*/
 }
 /* 235 */
 
@@ -224,4 +222,27 @@
 
 .my-product img {
 	border: 1px solid #ccc;
+}
+
+#prefootercontainer{
+	clear: both;
+	width: 800px;
+	margin: auto;
+	padding-top: 35px;
+	height: 100px;
+}
+
+.prefootercontent {
+	background: white;
+	width: 388px;
+	height: 98px;
+	float: left;
+	border: 1px solid #444;
+}
+
+#leftprefoot{
+	margin-right: 10px;
+}
+#rightprefoot{
+	margin-left: 10px;
 }
