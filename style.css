@@ -663,7 +663,7 @@ div.menu li {
 .home .post, .category .post, .home .gig, .category .gig {
 	border: 1px solid #444;
 	width: 230px;
-	height: 360px;
+	/*min-*/height: 400px;
 	float: left;
 	margin: 17px;
 	overflow: hidden;
