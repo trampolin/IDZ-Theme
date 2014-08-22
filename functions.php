@@ -191,6 +191,45 @@ function twentyten_setup() {
 }
 endif;
 
+
+// posts per page based on CPT
+function sfs_custom_posts_per_page($query)
+{
+	$location = $query->query_vars['custom_location'];
+    switch ( $query->query_vars['post_type'] )
+    {
+        case 'gig':
+						if (is_post_type_archive( 'gig' )) {
+						
+							$query->set('orderby', 'meta_value_num');  
+							$query->set('meta_key', 'gigdate');  
+							
+							if  (!isset($query->query_vars['custom_location']) || ($query->query_vars['custom_location'] != 'next_shows')) {
+								$query->query_vars['posts_per_page'] = 9;
+								$query->set('order', 'DESC'); 
+							}
+							else
+							{
+								$query->set('order', 'ASC');
+								$query->query_vars['posts_per_page'] = 4;
+							}
+
+
+						}
+            break;
+
+        default:
+						$query->query_vars['posts_per_page'] = 3;
+            break;
+    }
+    return $query;
+}
+
+if( !is_admin() )
+{
+    add_filter( 'pre_get_posts', 'sfs_custom_posts_per_page' );
+}
+
 if ( ! function_exists( 'twentyten_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.

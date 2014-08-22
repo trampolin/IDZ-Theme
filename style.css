@@ -660,7 +660,7 @@ div.menu li {
 	margin-top: 15px;
 }
 
-.home .post, .category .post, .home .gig, .category .gig {
+.home .post, .category .post, .home .gig, .category .gig, .post-type-archive .gig {
 	border: 1px solid #444;
 	width: 230px;
 	/*min-*/height: 400px;

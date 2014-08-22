@@ -30,23 +30,25 @@
 		<?php query_posts(array ( 
 				'post_type' => 'gig',
 				/*'category_name' => 'gigs', */
-				'posts_per_page' => 4, 
-				'order' => 'ASC',
+				/*'posts_per_page' => 4,*/
+				'custom_location' => 'next_shows',
 				'meta_key' => 'gigdate',
 				'meta_compare' => '>=',
-				'meta_value' => date('Y-m-d')
+				'meta_value' => date('Ymd')
 			)); ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			<li><a href="<?php echo get_permalink(); ?>">
 			 <?php 
-				$date = DateTime::createFromFormat('Y-m-d', get_field('gigdate'));
+				$date = DateTime::createFromFormat('Ymd', get_field('gigdate'));
 				echo $date->format('d.m.Y')." - ".get_field('gigcity');
 				$venue = get_field('gigvenue');
 				if ($venue != '') {
 					echo " - ".$venue;
 				}
 				
-				/*foreach ($gigdate as $key => $value)
+				/*$gigdate = get_field('gigdate');
+				echo $gigdate;
+				foreach ($gigdate as $key => $value)
 				{
 					echo $key." -> ".$value;
 				}*/
@@ -168,7 +170,7 @@
 				<?php twentyten_posted_on(); ?>
 			</div><!-- .entry-meta -->
 
-	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
+	<?php if ( /*is_archive() ||*/ is_search() ) : // Only display excerpts for archives and search. ?>
 			<div class="entry-summary">
 				<?php /*the_excerpt();*/ the_content(); ?>
 			</div><!-- .entry-summary -->
