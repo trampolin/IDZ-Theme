@@ -64,6 +64,8 @@
 	
 	</div>
 </div>
+
+
 <?php /* Display navigation to next/previous pages when applicable */ ?>
 <?php if ( $wp_query->max_num_pages > 1 ) : ?>
 	<div id="nav-above" class="navigation">
@@ -71,7 +73,10 @@
 		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 	</div><!-- #nav-above -->
 <?php endif; ?>
-
+<div class="post"><!-- SnapWidget -->
+<!-- SnapWidget -->
+<iframe src="http://snapwidget.com/in/?u=c3RlZW5iYW5kfGlufDExNXwzfDN8fG5vfDEwfG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=110914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:375px; height:375px"></iframe>
+</div>
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() && (1 == 0) ) : ?>
 	<div id="post-0" class="post error404 not-found">

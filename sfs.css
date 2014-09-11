@@ -4,8 +4,8 @@
 }
 
 #headerimg {
-	height: 300px;
-	background-color: rgba(255, 255, 255, 0.75);
+	height: 150px;
+	/*background-color: rgba(255, 255, 255, 0.75);*/
 	background-image: url(images/schleife.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -70,7 +70,7 @@
 
 #topcontentcontainer {
 	width: 800px;
-	height: 260px;
+	height: 240px;
 }
 
 .topcontentbox {
@@ -210,9 +210,9 @@
 }
 
 .shiny {
-	-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	/*-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
 	-moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
-	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);*/
 }
 
 .my-product {
@@ -230,12 +230,13 @@
 	margin: auto;
 	padding-top: 35px;
 	height: 100px;
+	display: none;
 }
 
 .prefootercontent {
 	background: white;
 	width: 388px;
-	height: 98px;
+	height: 388px;
 	float: left;
 	border: 1px solid #444;
 }

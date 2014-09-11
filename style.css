@@ -171,7 +171,7 @@ div.menu,
 }
 #wrapper {
 	/*background: #fffffd;*/
-	background-color: rgba(255, 255, 250, 0.75);
+	background-color: rgba(255, 255, 250, 0.50);
 	margin-top: 20px;
 	padding: 0 20px;
 }s
@@ -385,19 +385,21 @@ a:hover {
 	display: block;
 	float: left;
 	margin: 0 auto;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 940px;
 	/*border-bottom: 1px solid #ccc;*/
 	/*border-bottom: 1px solid #555;
 	border-top: 1px solid #555;*/
-background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 89%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.75)), color-stop(89%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	
+	
+/*background: -moz-linear-gradient(top,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.75) 89%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.75)), color-stop(89%,rgba(255,255,255,0.75)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+/*background: -webkit-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+/*background: -o-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+/*background: -ms-linear-gradient(top,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* IE10+ */
+/*background: linear-gradient(to bottom,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.75) 89%,rgba(255,255,255,0) 100%); /* W3C */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
 
 }
@@ -419,16 +421,28 @@ div.menu li {
 	width: 200px;
 	margin-left: 15px;
 	margin-right: 15px;
+	background-color: rgba(255, 255, 255, 0.75);
+	/*border: 1px solid black;*/
+	
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+	
+	
 	/*border-bottom: 1px solid #ccc;*/
 }
 #access a {
-	color: #888;
+	color: #000;
 	display: block;
 	line-height: 38px;
 	padding: 0 10px;
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
+	
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
 }
 #access ul ul {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
@@ -458,11 +472,12 @@ div.menu li {
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #eee;
+	background: #ddd;
 	color: black;
 }
 #access ul li:hover > ul {
 	display: block;
+
 }
 #access ul li.current_page_item > a,
 #access ul li.current_page_ancestor > a,
@@ -662,8 +677,8 @@ div.menu li {
 
 .home .post, .category .post, .home .gig, .category .gig, .post-type-archive .gig {
 	border: 1px solid #444;
-	width: 230px;
-	/*min-*/height: 400px;
+	width: 364px;
+	/*min-*/height: 360px;
 	float: left;
 	margin: 17px;
 	overflow: hidden;
@@ -671,9 +686,9 @@ div.menu li {
 	background: white;
 	
 	/* shiny */
-	-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	/*-webkit-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
 	-moz-box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
-	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);
+	box-shadow: 5px -5px 5px 0px rgba(0,0,0,0.33);*/
 }
 
 .single  .post, .single .gig {

@@ -219,7 +219,7 @@ function sfs_custom_posts_per_page($query)
             break;
 
         default:
-						$query->query_vars['posts_per_page'] = 3;
+						$query->query_vars['posts_per_page'] = 4;
             break;
     }
     return $query;
