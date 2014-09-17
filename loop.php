@@ -75,7 +75,11 @@
 <?php endif; ?>
 <div class="post"><!-- SnapWidget -->
 <!-- SnapWidget -->
-<iframe src="http://snapwidget.com/in/?u=c3RlZW5iYW5kfGlufDExNXwzfDN8fG5vfDEwfG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=110914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:375px; height:375px"></iframe>
+<?php 
+	ifttt_instagram_gallery();
+?>
+
+<!--iframe src="http://snapwidget.com/in/?u=c3RlZW5iYW5kfGlufDExNXwzfDN8fG5vfDEwfG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=110914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:375px; height:375px"></iframe-->
 </div>
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() && (1 == 0) ) : ?>
