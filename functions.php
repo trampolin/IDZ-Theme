@@ -205,13 +205,13 @@ function sfs_custom_posts_per_page($query)
 							$query->set('meta_key', 'gigdate');  
 							
 							if  (!isset($query->query_vars['custom_location']) || ($query->query_vars['custom_location'] != 'next_shows')) {
-								$query->query_vars['posts_per_page'] = 9;
+								$query->query_vars['posts_per_page'] = 8;
 								$query->set('order', 'DESC'); 
 							}
 							else
 							{
 								$query->set('order', 'ASC');
-								$query->query_vars['posts_per_page'] = 4;
+								$query->query_vars['posts_per_page'] = 3;
 							}
 
 
@@ -219,7 +219,7 @@ function sfs_custom_posts_per_page($query)
             break;
 
         default:
-						$query->query_vars['posts_per_page'] = 4;
+						$query->query_vars['posts_per_page'] = 3;
             break;
     }
     return $query;

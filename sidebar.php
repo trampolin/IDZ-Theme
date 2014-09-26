@@ -33,8 +33,8 @@
 			<li id="widget-rss" class="widget-container">
 				<a href="<?php bloginfo('rss2_url'); ?>" title="RSS Feed"><div id="rssfeed"></div></a>
 			</li>			
-			<li id="widget-hell" class="widget-container">
-				<a href="http://hellyesbooking.com" title="Hell Yes Booking"><div id="hellyes"></div></a>
+			<li id="widget-email" class="widget-container">
+				<a href="mailto:booking@steenband.de" title="Email"><div id="emails"></div></a>
 			</li>
 
 		<?php endif; // end primary widget area ?>

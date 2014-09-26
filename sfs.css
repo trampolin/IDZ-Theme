@@ -189,6 +189,7 @@
 #twitter,
 #rssfeed,
 #epk,
+#emails,
 #youtube {
 	width: 64px;
 	height: 64px;
@@ -207,6 +208,9 @@
 }
 #epk {
 	background-image: url("images/epk64.png");
+}
+#emails {
+	background-image: url("images/em64.png");
 }
 
 .shiny {

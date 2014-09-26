@@ -20,7 +20,8 @@
 ?>
 <div id="topcontentcontainer">
 	<div class="topcontentbox shiny">
-		<iframe width="380" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe>
+		<!--iframe width="380" height="213" src="//www.youtube.com/embed/S-EJNmlUfwQ" frameborder="0" allowfullscreen></iframe-->
+		<iframe width="380" height="213" src="//www.youtube.com/embed/h6ilv5udZ08" frameborder="0" allowfullscreen></iframe>
 	</div>
 	
 	<div class="topcontentbox shiny" id="next-shows">
@@ -73,13 +74,13 @@
 		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 	</div><!-- #nav-above -->
 <?php endif; ?>
-<div class="post"><!-- SnapWidget -->
+<div class="post gig"><!-- SnapWidget -->
 <!-- SnapWidget -->
 <?php 
-	ifttt_instagram_gallery();
+	//ifttt_instagram_gallery();
 ?>
 
-<!--iframe src="http://snapwidget.com/in/?u=c3RlZW5iYW5kfGlufDExNXwzfDN8fG5vfDEwfG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=110914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:375px; height:375px"></iframe-->
+<iframe src="http://snapwidget.com/in/?u=c3RlZW5iYW5kfGlufDExNXwzfDN8fG5vfDEwfG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=110914" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:375px; height:375px"></iframe>
 </div>
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() && (1 == 0) ) : ?>
