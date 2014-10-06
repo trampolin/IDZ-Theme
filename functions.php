@@ -484,6 +484,16 @@ function twentyten_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	
+	register_sidebar( array(
+		'name' => __( 'Top Widget Area 1'),
+		'id' => 'topwidgetarea',
+		'description' => __( 'For Video and Next Shows', 'twentyten' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => "</div>",
+		/*'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',*/
+   ) );
 }
 /** Register sidebars by running twentyten_widgets_init() on the widgets_init hook. */
 add_action( 'widgets_init', 'twentyten_widgets_init' );

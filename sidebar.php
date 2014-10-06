@@ -36,6 +36,9 @@
 			<li id="widget-email" class="widget-container">
 				<a href="mailto:booking@steenband.de" title="Email"><div id="emails"></div></a>
 			</li>
+			<li id="widget-epk" class="widget-container">
+				<a href="#" title="Epk downloaden"><div id="epk"></div></a>
+			</li>
 
 		<?php endif; // end primary widget area ?>
 			</ul>

@@ -418,10 +418,10 @@ div.menu ul {
 div.menu li {
 	float: left;
 	position: relative;
-	width: 200px;
+	width: 276px;
 	margin-left: 15px;
 	margin-right: 15px;
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(0, 0, 0, 0.04);
 	/*border: 1px solid black;*/
 	
 border-radius: 10px 10px 10px 10px;
@@ -472,7 +472,7 @@ border-radius: 10px 10px 10px 10px;
 }
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #ddd;
+	background-color: rgba(0, 0, 0, 0.14);
 	color: black;
 }
 #access ul li:hover > ul {
@@ -485,7 +485,7 @@ border-radius: 10px 10px 10px 10px;
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
 	color: black;
-	background: #ffeedd;
+	background-color: rgba(0, 0, 0, 0.14);
 }
 #access ul li.current_page_item > a:hover,
 #access ul li.current_page_ancestor > a:hover,
@@ -493,7 +493,7 @@ border-radius: 10px 10px 10px 10px;
 #access ul li.current-menu-item > a:hover,
 #access ul li.current-menu-parent > a:hover {
 	color: black;
-	background: #ffddbb;
+	background-color: rgba(0, 0, 0, 0.14);
 }
 
 * html #access ul li.current_page_item a,
@@ -513,7 +513,7 @@ border-radius: 10px 10px 10px 10px;
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 20px 0 0 0;
+	padding: 30px 0 0 0;
 }
 #content {
 	margin-bottom: 36px;
@@ -678,7 +678,7 @@ border-radius: 10px 10px 10px 10px;
 .home .post, .category .post, .home .gig, .category .gig, .post-type-archive .gig {
 	border: 1px solid #444;
 	width: 364px;
-	/*min-*/height: 360px;
+	/*min-*/height: 364px;
 	float: left;
 	margin: 17px;
 	overflow: hidden;
@@ -1353,7 +1353,7 @@ h3#reply-title {
 	border-top: 4px solid #000;
 	margin-top: -4px;
 	overflow: hidden;
-	padding: 18px 0;
+	padding: 38px 0;
 }
 #site-info {
 	font-weight: bold;

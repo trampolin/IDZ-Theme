@@ -11,6 +11,10 @@
 	background-position: center;
 }
 
+#shop {
+	background-image: url(images/impuls_der_zeit.jpg);
+}
+
 .headerinfo {
 	width: 200px;
 	height: 272px;
@@ -73,12 +77,13 @@
 	height: 240px;
 }
 
-.topcontentbox {
+.topcontentbox, #topcontentcontainer .widget{
 	width: 380px;
 	height: 213px;
 	/*border: 1px solid #ccc;*/
 	float: left;
 	margin: 10px;
+	margin-top: 0px;
 	font-family: "steen";
 	text-align: center;
 }
@@ -190,7 +195,8 @@
 #rssfeed,
 #epk,
 #emails,
-#youtube {
+#youtube,
+#epk {
 	width: 64px;
 	height: 64px;
 }
@@ -211,6 +217,9 @@
 }
 #emails {
 	background-image: url("images/em64.png");
+}
+#epk {
+	background-image: url("images/epk64.png");
 }
 
 .shiny {
@@ -251,3 +260,6 @@
 #rightprefoot{
 	margin-left: 10px;
 }
+
+.bc-plugin-products{float:right;width:100%;margin-left:-5px;} 
+.bc-plugin-products .bc-plugin-product{float:right;margin-left:5px;}
